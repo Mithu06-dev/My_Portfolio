@@ -22,6 +22,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    
 </head>
 
 <body>
@@ -58,6 +60,9 @@
 
             <li>
                 <a href="#certificates">Certificates</a>
+            </li>
+            <li>
+                <a href="#internship">Internship</a>
             </li>
 
             <li>
@@ -1220,7 +1225,257 @@
 
     </section>
 
+<!-- ==============================
+     INTERNSHIP SECTION
+================================= -->
 
+<section id="internship" class="internship-section">
+
+    <div class="internship-heading">
+
+        <span>MY EXPERIENCE</span>
+
+        <h2>
+            Internship & <b>Experience</b>
+        </h2>
+
+        <p>
+            Practical experience gained through Python,
+            AI/ML learning and real-world project development.
+        </p>
+
+    </div>
+
+
+    <div class="internship-card">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="internship-details">
+
+            <div class="internship-icon">
+                💼
+            </div>
+
+            <span class="internship-label">
+                INTERNSHIP
+            </span>
+
+            <h3>
+                Python with AIML
+            </h3>
+
+            <h4>
+                QuantumNique Solutions Pvt Ltd
+            </h4>
+
+
+            <div class="internship-info">
+
+                <div>
+                    <span>📅</span>
+                    <p>
+                        Duration
+                        <strong>1 Month</strong>
+                    </p>
+                </div>
+                 <div>
+                    <i class="fas fa-calendar-alt"></i>
+
+                    <p>
+                        Period
+                        <strong>July – August 2026</strong>
+                    </p>
+                </div>
+                <div>
+                    <span>📍</span>
+                    <p>
+                        Location
+                        <strong>Tamil Nadu</strong>
+                    </p>
+                </div>
+
+            </div>
+
+
+            <h4 class="about-title">
+                About the Internship
+            </h4>
+
+            <p class="internship-description">
+
+                Successfully completed a 30-day internship
+                training at QuantumNique Solutions Pvt Ltd
+                in the field of Python with AIML.
+
+                During the internship, I strengthened my
+                understanding of Python programming and
+                Artificial Intelligence & Machine Learning
+                concepts through practical learning and
+                project-based activities.
+
+                The experience helped me develop my technical
+                skills, problem-solving abilities and
+                understanding of real-world AI/ML applications.
+
+            </p>
+
+
+            <!-- TECHNOLOGIES -->
+
+            <h4 class="about-title">
+                Technologies & Skills
+            </h4>
+
+            <div class="internship-skills">
+
+                <!-- Python -->
+    <span>
+        <i class="fa-brands fa-python"></i>
+        Python Programming
+    </span>
+
+    <!-- AI -->
+    <span>
+        <i class="fa-solid fa-robot"></i>
+        Artificial Intelligence
+    </span>
+
+    <!-- AI / ML -->
+    <span>
+        <i class="fa-solid fa-brain"></i>
+        AI / ML
+    </span>
+
+    <!-- LLM -->
+    <span>
+        <i class="fa-solid fa-microchip"></i>
+        Large Language Models
+    </span>
+
+    <!-- Machine Learning -->
+    <span>
+        <i class="fa-solid fa-chart-line"></i>
+        Machine Learning
+    </span>
+
+    <!-- Problem Solving -->
+    <span>
+        <i class="fa-solid fa-puzzle-piece"></i>
+        Problem Solving
+    </span>
+                
+<br>
+            </div>
+<div class="company-website">
+
+    <p>Interested in knowing more about the company?</p>
+
+    <a
+        href="https://quantumniquesolutions.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="company-website-btn">
+
+        <i class="fas fa-globe"></i>
+        Know More About the Company
+        <i class="fas fa-arrow-up-right-from-square"></i>
+
+    </a>
+
+</div>
+        </div>
+
+        
+
+        <!-- RIGHT SIDE -->
+
+        <div class="certificate-box">
+
+            <span class="certificate-label">
+                CERTIFICATE
+            </span>
+
+            <h3>
+                Internship Certificate
+            </h3>
+
+            <!-- YOUR CERTIFICATE -->
+
+            <div class="certificate-image">
+
+                <img
+                    src="Portfolio/internship certificate.jpeg"
+                    alt="Internship Certificate"
+                >
+
+            </div>
+
+
+            <!-- BUTTON -->
+
+            <button
+    type="button"
+    class="certificate-button"
+    onclick="openCertificate()">
+
+    <i class="fas fa-eye"></i>
+    View Certificate
+
+</button>
+<!-- ==============================
+     CERTIFICATE POPUP
+================================= -->
+
+<div id="certificateModal" class="certificate-modal">
+
+    <div class="certificate-popup">
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            type="button"
+            class="certificate-close"
+            onclick="closeCertificate()">
+
+            &times;
+
+        </button>
+
+
+        <!-- TITLE -->
+
+        <div class="certificate-popup-title">
+
+            <span>INTERNSHIP</span>
+
+            <h2>
+                Internship <b>Certificate</b>
+            </h2>
+
+        </div>
+
+
+        <!-- CERTIFICATE -->
+
+        <div class="certificate-full">
+
+            <img
+                src="Portfolio/internship certificate.jpeg"
+                alt="Mithran Internship Certificate">
+
+        </div>
+
+    </div>
+
+</div>
+        </div>
+
+    </div>
+    
+
+</section>
 
     <!-- ================= CONTACT ================= -->
 
@@ -1282,6 +1537,11 @@
     <p id="form-status"></p>
 
 </form>
+<!-- internship page -->
+
+
+
+            
 
 
         <!-- CONTACT DETAILS -->
@@ -1721,6 +1981,40 @@
         });
 
     });
+
+
+    function openCertificate() {
+
+    const modal =
+        document.getElementById("certificateModal");
+
+    modal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeCertificate() {
+
+    const modal =
+        document.getElementById("certificateModal");
+
+    modal.classList.remove("show");
+
+    document.body.style.overflow = "auto";
+}
+
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        closeCertificate();
+
+    }
+
+});
+
 
 </script>
 
